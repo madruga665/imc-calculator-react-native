@@ -1,7 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import Header from "./components/Header";
 import Form from "./components/Form";
+import Button from "./components/Button";
+import { styles } from "./styles";
 
 export default function App() {
   return (
@@ -9,25 +11,9 @@ export default function App() {
       <Header />
       <Form />
       <View style={styles.buttonContainer}>
-
+        <Button />
       </View>
       <StatusBar style='light' />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#34495e",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  buttonContainer: {
-    height: 160,
-    alignSelf: "stretch",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#2c3e50",
-  },
-});
