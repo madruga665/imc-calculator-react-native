@@ -2,6 +2,8 @@
   "name": "imc-calculator-react-native",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
+  "owner": "madruga665",
+  "slug": "imc-calculator-react-native",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
