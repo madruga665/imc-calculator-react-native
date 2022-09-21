@@ -1,8 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import { Alert, View } from "react-native";
-import Header from "./components/Header";
-import Form from "./components/Form";
-import Button from "./components/Button";
+import Header from "./src/components/Header";
+import Form from "./src/components/Form";
+import Button from "./src/components/Button";
 import { styles } from "./styles";
 import { useState } from "react";
 import { imcMessage } from "./helpers/imcMessage";
