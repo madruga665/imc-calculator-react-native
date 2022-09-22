@@ -1,30 +1,33 @@
-import { View, TextInput } from "react-native";
+import { View } from "react-native";
 import { styles } from "./styles";
+import { TextInputMask } from "react-native-masked-text";
 
-export default function Form({height, setHeight, weight, setWeight}) {
-  const heightMask = (value: string):string => {
-    value = value.replace(/\D/g, '');
-    value = value.replace(/^(\d{1})(\d)/, '$1,$2')
-    return value;
-  }
-
+export default function Form({ height, setHeight, weight, setWeight }) {
   return (
     <View style={styles.container}>
-      <TextInput
-        keyboardType='number-pad'
-        placeholder='Sua Altura ex: 1.82'
+      <TextInputMask
+        type='custom'
+        options={{
+          mask: "9,99",
+        }}
+        keyboardType='numeric'
+        placeholder='Sua Altura ex: 1,82'
         placeholderTextColor='#7f8c8d'
         style={styles.input}
         value={height}
-        onChangeText={(value) => setHeight(heightMask(value))}
+        onChangeText={(value) => setHeight(value)}
       />
-      <TextInput
+      <TextInputMask
+        type='custom'
+        options={{
+          mask: "99,999",
+        }}
         keyboardType='numeric'
         placeholder='Seu Peso'
         placeholderTextColor='#7f8c8d'
         style={styles.input}
         value={weight}
-        onChangeText={setWeight}
+        onChangeText={(value) => setWeight(value)}
       />
     </View>
   );
