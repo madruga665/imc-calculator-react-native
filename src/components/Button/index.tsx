@@ -3,7 +3,15 @@ import { styles } from "./styles";
 
 export default function Button({ calculateIMC }) {
   return (
-    <Pressable style={styles.button} onPress={calculateIMC}>
+    <Pressable
+      style={({ pressed }) => [
+        {
+          opacity: pressed ? 0.5 : 1,
+        },
+        styles.button,
+      ]}
+      onPress={calculateIMC}
+    >
       <Text style={styles.buttonText}>CALCULAR</Text>
     </Pressable>
   );
