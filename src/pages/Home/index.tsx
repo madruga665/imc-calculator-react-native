@@ -5,7 +5,6 @@ import { imcMessage } from "../../../helpers/imcMessage";
 import Header from "../../components/Header";
 import Form from "../../components/Form";
 import Button from "../../components/Button";
-import { StatusBar } from "expo-status-bar";
 
 export default function Home() {
   const [height, setHeight] = useState("");
