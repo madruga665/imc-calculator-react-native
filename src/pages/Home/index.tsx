@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 import Form from "../../components/Form";
 import Button from "../../components/Button";
 
-export default function Home() {
+const Home: React.FC = () => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
 
@@ -28,6 +28,7 @@ export default function Home() {
     setHeight("");
     setWeight("");
   };
+
   return (
     <View style={styles.container}>
       <Header />
@@ -37,4 +38,6 @@ export default function Home() {
       </View>
     </View>
   );
-}
+};
+
+export default Home;
