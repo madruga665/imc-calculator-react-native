@@ -37,3 +37,7 @@ npm install
 ```
 npx expo start
 ```
+
+## Images do App
+
+https://user-images.githubusercontent.com/71455402/192141982-dfa13561-da4e-4c84-bcf7-6a26a1bfbe9b.mp4
