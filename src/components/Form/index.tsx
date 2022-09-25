@@ -2,14 +2,14 @@ import { View } from "react-native";
 import { styles } from "./styles";
 import { TextInputMask } from "react-native-masked-text";
 
-interface IForm  {
-  height: string,
-  weight: string,
-  setHeight: (value: string) => void,
-  setWeight: (value: string) => void
+interface IForm {
+  height: string;
+  weight: string;
+  setHeight: (value: string) => void;
+  setWeight: (value: string) => void;
 }
 
-export default function Form({ height, setHeight, weight, setWeight }: IForm) {
+const Form: React.FC<IForm> = ({ height, weight, setHeight, setWeight }) => {
   return (
     <View style={styles.container}>
       <TextInputMask
@@ -38,4 +38,6 @@ export default function Form({ height, setHeight, weight, setWeight }: IForm) {
       />
     </View>
   );
-}
+};
+
+export default Form;
