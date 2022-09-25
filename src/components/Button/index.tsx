@@ -2,10 +2,10 @@ import { Pressable, Text } from "react-native";
 import { styles } from "./styles";
 
 interface IButton {
-  calculateIMC: () => void
+  calculateIMC: () => void;
 }
 
-export default function Button({ calculateIMC }: IButton) {
+const Button: React.FC<IButton> = ({ calculateIMC }) => {
   return (
     <Pressable
       style={({ pressed }) => [
@@ -19,4 +19,6 @@ export default function Button({ calculateIMC }: IButton) {
       <Text style={styles.buttonText}>CALCULAR</Text>
     </Pressable>
   );
-}
+};
+
+export default Button;
