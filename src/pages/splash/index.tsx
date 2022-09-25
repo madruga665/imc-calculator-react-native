@@ -3,8 +3,8 @@ import Lottie from "lottie-react-native";
 import { styles } from "./styles";
 import { useNavigation } from "@react-navigation/core";
 
-export default function Splash() {
-  const navigation = useNavigation()
+const Splash = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Lottie
@@ -15,4 +15,6 @@ export default function Splash() {
       />
     </View>
   );
-}
+};
+
+export default Splash;
