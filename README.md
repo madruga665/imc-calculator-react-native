@@ -40,4 +40,6 @@ npx expo start
 
 ## Images do App
 
+![image](https://user-images.githubusercontent.com/71455402/192142103-af921c13-380c-4514-9b63-e0ae874a7e5c.png)
+
 https://user-images.githubusercontent.com/71455402/192141982-dfa13561-da4e-4c84-bcf7-6a26a1bfbe9b.mp4
