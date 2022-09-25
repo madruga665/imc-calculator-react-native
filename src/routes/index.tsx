@@ -5,17 +5,19 @@ import Splash from "../pages/splash";
 
 const Stack = createNativeStackNavigator();
 
-export default function Routes() {
+const Routes: React.FC = () => {
   const screenOptions = {
     headerShown: false,
   };
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={screenOptions}>
+      <Stack.Navigator screenOptions={screenOptions} initialRouteName='Splash'>
         <Stack.Screen name='Splash' component={Splash} />
         <Stack.Screen name='Home' component={Home} options={{ gestureEnabled: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
+
+export default Routes;
