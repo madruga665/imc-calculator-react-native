@@ -1,11 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import Routes from "./src/routes";
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <>
       <Routes />
       <StatusBar style='light' />
     </>
   );
-}
+};
+
+export default App;
