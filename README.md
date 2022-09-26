@@ -33,7 +33,7 @@ cd imc-calculator-react-native
 npm install
 ```
 
-**Inicio o projeto**
+**Inicie o projeto**
 ```
 npx expo start
 ```
